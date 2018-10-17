@@ -13,13 +13,17 @@ title: Parallelization
 
 {% endnote %}
 
+{% note warning %}
+Please be aware that the following instructions for parallelization are only applicable to paid users of the Dashboard Service
+{% endnote %}
+
 # Overview
 
 If your project has a large number of tests, it can take a long time for tests to complete running serially on one machine. Running tests in parallel across many virtual machines can save your team time and money when running tests in Continuous Integration (CI).
 
 Cypress can run recorded tests in parallel across multiple machines since version {% url "3.1.0" changelog#3-1-0 %}. While parallel tests can also technically run on a single machine, we do not recommend it since this machine would require significant resources to run your tests efficiently.
 
-This guide assumes you already have your project running and {% url "recording" dashboard-service#Setup %} within Continuous Integration. If you have not set up your project yet, check out our {% url "Continuous Integration guide" continuous-integration %}.
+This guide assumes you already have your project running and {% url "recording" dashboard-service#Setup %} within Continuous Integration. If you have not set up your project yet, check out our {% url "Continuous Integration guide" continuous-integration %}. Parallelization instruction below are only for users using the Dashboard Service 
 
 # Splitting up your test suite
 
